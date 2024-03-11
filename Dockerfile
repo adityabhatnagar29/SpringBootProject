@@ -1,6 +1,4 @@
-FROM openjdk:17.0.2
-VOLUME /tmp
-EXPOSE 9999
-ARG JAR_FILE=target/spring-boot-docker.jar
-ADD ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+FROM openjdk:17
+WORKDIR /app
+COPY target/*.jar springboot-docker-integration.jar
+ENTRYPOINT ["java", "-jar", "springboot-docker-integration.jar"]
