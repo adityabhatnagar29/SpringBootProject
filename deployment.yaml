@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-docker-integration-deployment-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: springboot-docker-integration-deployment-app
+  template:
+    metadata:
+      labels:
+        app: springboot-docker-integration-deployment-app
+    spec:
+      containers:
+        - name: spring-boot-container
+          image: adityabhatnagar2919/springboot-docker-integration
+          ports:
+            - containerPort: 9999
