@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: spring-boot-container
-          image: adityabhatnagar2919/springboot-docker-integration
+          image: adityabhatnagar2919/springbootintegration
           ports:
             - containerPort: 9999
