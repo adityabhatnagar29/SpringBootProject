@@ -49,6 +49,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>springbootintegration</finalName>
 	</build>
 
 </project>

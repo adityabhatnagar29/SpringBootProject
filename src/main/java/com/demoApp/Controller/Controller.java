@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/get")
 public class Controller {
 
-	@GetMapping("/")
+	@GetMapping("/get")
 	public String getMethod() {
 		return "This is the Kubernetes and Docker Assignment.";
 	}
