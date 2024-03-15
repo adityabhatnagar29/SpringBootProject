@@ -16,4 +16,4 @@ spec:
         - name: spring-boot-container
           image: adityabhatnagar2919/springbootintegration
           ports:
-            - containerPort: 9999
+            - containerPort: 8081
